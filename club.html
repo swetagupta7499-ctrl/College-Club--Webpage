@@ -26,34 +26,34 @@
         </nav>
     </header>
 
-    <!-- Clubs Grid Section: Displays cards for all 6 active clubs -->
+    <!-- Clubs Directory Section: Displays 6 responsive club cards in a grid layout -->
     <section class="container">
         <p class="small-title">--- EXPLORE COMMUNITIES ---</p>
-        <h2 class="section-heading">Discover &amp; Join Our Campus Clubs</h2>
-        <p class="section-sub">Click on any club card below to read its complete overview, weekly schedule, and detailed activities.</p>
+        <h2 class="section-heading">Discover &amp; Join Our 6 Campus Clubs</h2>
+        <p class="section-sub">Click on any club card below to read its complete overview, weekly schedule, and key activities.</p>
 
         <div class="grid-box">
-            <!-- 1. Coding Club Card: Redirects to dedicated club-des.html page -->
+            <!-- Coding Club Card: Redirects to the dedicated club-des.html page when clicked -->
             <div class="card" onclick="location.href='club-des.html'">
                 <span class="badge">SOFTWARE &amp; FULL-STACK DEV</span>
                 <div class="icon">💻</div>
                 <h3>Coding Club</h3>
-                <p>Master HTML, CSS, JavaScript, C++, Python, Data Structures &amp; Algorithms (DSA), and Git/GitHub. Build live projects and compete in national hackathons.</p>
+                <p>Master HTML, CSS, JavaScript, C++, Python, Data Structures &amp; Algorithms (DSA), and Git/GitHub. Build live projects and compete in national hackathons like SIH.</p>
                 <p class="card-meta">📅 <strong>Meet:</strong> Friday, 4:00 PM | 📍 CS Lab 1</p>
                 <a href="club-des.html" class="outline-btn">Explore Coding Club Page →</a>
             </div>
 
-            <!-- 2. Music Club Card: Triggers showClub('music') function in app.js -->
+            <!-- Music Club Card: Calls showClub('music') function in app.js to open the modal popup -->
             <div class="card" onclick="showClub('music')">
                 <span class="badge">VOCALS, INSTRUMENTS &amp; BAND</span>
                 <div class="icon">🎸</div>
                 <h3>Music Club</h3>
-                <p>Unleash your passion for music through classical and western vocals, guitar, keyboard, drums, band jamming sessions, and live acoustic concerts.</p>
+                <p>Unleash your passion for music through classical and western vocals, guitar, keyboard, drums, band jamming sessions, and live acoustic concerts during fests.</p>
                 <p class="card-meta">📅 <strong>Meet:</strong> Saturday, 3:00 PM | 📍 Music Room</p>
                 <button class="outline-btn">View Full Club Details →</button>
             </div>
 
-            <!-- 3. Drama Club Card: Triggers showClub('drama') function in app.js -->
+            <!-- Drama Club Card: Calls showClub('drama') function in app.js -->
             <div class="card" onclick="showClub('drama')">
                 <span class="badge">THEATER, ACTING &amp; SCRIPT</span>
                 <div class="icon">🎭</div>
@@ -63,52 +63,70 @@
                 <button class="outline-btn">View Full Club Details →</button>
             </div>
 
-            <!-- 4. Sports Club Card: Triggers showClub('sports') function in app.js -->
+            <!-- Sports Club Card: Calls showClub('sports') function in app.js -->
             <div class="card" onclick="showClub('sports')">
                 <span class="badge">FITNESS, ATHLETICS &amp; GAMES</span>
                 <div class="icon">⚽</div>
                 <h3>Sports Club</h3>
-                <p>Build stamina, teamwork, and sportsmanship. Train daily for inter-college tournaments in cricket, football, basketball, badminton, and chess.</p>
+                <p>Build stamina, teamwork, and sportsmanship. Train daily for inter-college tournaments in cricket, football, basketball, volleyball, badminton, table tennis, and chess.</p>
                 <p class="card-meta">📅 <strong>Practice:</strong> Daily, 5:30 PM | 📍 Sports Ground</p>
                 <button class="outline-btn">View Full Club Details →</button>
             </div>
 
-            <!-- 5. Debate Club Card: Triggers showClub('debate') function in app.js -->
+            <!-- Debate Club Card: Calls showClub('debate') function in app.js -->
             <div class="card" onclick="showClub('debate')">
                 <span class="badge">PUBLIC SPEAKING, LOGIC &amp; MUN</span>
                 <div class="icon">🎙️</div>
                 <h3>Debate Club</h3>
-                <p>Sharpen your critical thinking, stage confidence, and communication skills through Parliamentary Debates, Model United Nations (MUN), and group discussions.</p>
+                <p>Sharpen your critical thinking, stage confidence, and communication skills through Parliamentary Debates, Model United Nations (MUN), extempore speeches, and GDs.</p>
                 <p class="card-meta">📅 <strong>Meet:</strong> Tuesday, 4:00 PM | 📍 Seminar Hall 2</p>
                 <button class="outline-btn">View Full Club Details →</button>
             </div>
 
-            <!-- 6. Art & Craft Club Card: Triggers showClub('art') function in app.js -->
+            <!-- Art & Craft Club Card: Calls showClub('art') function in app.js -->
             <div class="card" onclick="showClub('art')">
                 <span class="badge">FINE ARTS, PAINTING &amp; DIY</span>
                 <div class="icon">🎨</div>
                 <h3>Art &amp; Craft Club</h3>
-                <p>Express your creativity through sketching, acrylic &amp; watercolor canvas painting, calligraphy, origami, clay modeling, and campus fest decorations.</p>
+                <p>Express your creativity through sketching, acrylic &amp; watercolor canvas painting, calligraphy, origami, clay modeling, poster design, and campus fest decorations.</p>
                 <p class="card-meta">📅 <strong>Meet:</strong> Saturday, 2:00 PM | 📍 Creative Studio</p>
                 <button class="outline-btn">View Full Club Details →</button>
             </div>
         </div>
 
-        <!-- Popup Modal Box: Dynamically populated by app.js when a club card is clicked -->
+        <!-- Popup Modal Container: Hidden by default, dynamically populated and shown by app.js -->
         <div id="popup-box" class="modal">
             <div class="modal-box">
+                <!-- Close Button: Calls closePopup() function in app.js to hide the modal -->
                 <span class="close-btn" onclick="closePopup()">×</span>
                 <span id="club-tag" class="badge">CLUB OVERVIEW</span>
                 <h2 id="club-title">Club Name</h2>
                 <p id="club-description"></p>
                 <div id="club-schedule" class="schedule-box"></div>
                 <div id="club-activities" class="activity-box"></div>
-                <a href="Contact.html" class="btn">Contact Club Coordinator →</a>
+                <a href="Contact.html#join-form" class="btn">Register / Contact Coordinator →</a>
             </div>
         </div>
     </section>
 
-    <!-- Linking external JavaScript file -->
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <div>
+                <h3>SITARE UNIVERSITY - COLLEGE CLUB HUB</h3>
+                <p>Empowering students to learn, innovate, and lead beyond classrooms.</p>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="club.html">Clubs</a>
+                <a href="club-des.html">Coding Club</a>
+                <a href="Contact.html">Contact &amp; Join</a>
+            </div>
+        </div>
+        <p class="copyright">© 2026 College Club Hub | Sitare University | Designed by Himani &amp; Team</p>
+    </footer>
+
+    <!-- Connects app.js to handle modal popup interactions -->
     <script src="app.js"></script>
 </body>
 </html>

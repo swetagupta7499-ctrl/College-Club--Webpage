@@ -1,10 +1,11 @@
 /* ==========================================================
    Function: showClub(clubName)
-   Purpose: Dynamically populates and displays the modal popup 
-   with detailed descriptions, schedules, and activities when 
-   a specific club card is clicked on club.html.
+   Purpose: Uses DOM Manipulation (document.getElementById) and 
+   if-else conditional logic to dynamically update the modal text 
+   and display full details of the selected club on club.html.
    ========================================================== */
 function showClub(clubName) {
+    // Selecting HTML elements inside the popup modal by their unique IDs
     var tag = document.getElementById("club-tag");
     var title = document.getElementById("club-title");
     var desc = document.getElementById("club-description");
@@ -12,7 +13,7 @@ function showClub(clubName) {
     var activities = document.getElementById("club-activities");
     var popup = document.getElementById("popup-box");
 
-    // Conditional statements to assign rich content based on clicked club
+    // Checking which club parameter was passed and updating innerText accordingly
     if (clubName === "music") {
         tag.innerText = "VOCALS, INSTRUMENTS & LIVE BAND";
         title.innerText = "🎸 Music Club";
@@ -49,22 +50,24 @@ function showClub(clubName) {
         activities.innerText = "✔ Pencil Sketching, Acrylic, Watercolor & Canvas Painting Workshops\n✔ Origami, DIY Paper Crafts, Pottery & Best-Out-Of-Waste Creations\n✔ Calligraphy, Poster Making, Rangoli & Digital Illustration\n✔ Annual Campus Art Exhibition & Cultural Fest Stage Designing";
     }
 
-    // Make the modal visible by setting display flex
+    // Changes modal display from 'none' to 'flex' so it appears centered on the screen
     popup.style.display = "flex";
 }
 
 /* ==========================================================
    Function: closePopup()
-   Purpose: Hides the modal popup box when the close button is clicked.
+   Purpose: Hides the modal popup box by setting its CSS display 
+   property back to 'none' when the '×' close button is clicked.
    ========================================================== */
 function closePopup() {
     document.getElementById("popup-box").style.display = "none";
 }
 
 /* ==========================================================
-   Window Event: Click outside modal to close
-   Purpose: Automatically closes the popup if the user clicks 
-   on the dark backdrop outside the modal card.
+   Event Listener: window.onclick
+   Purpose: Detects clicks anywhere on the window; if the user 
+   clicks on the dark background overlay outside the modal box, 
+   it automatically closes the popup.
    ========================================================== */
 window.onclick = function(event) {
     var popup = document.getElementById("popup-box");

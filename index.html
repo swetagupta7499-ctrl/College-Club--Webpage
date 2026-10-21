@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Defines character encoding and responsive viewport scaling for all screen sizes -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>College Club Hub - Home</title>
-    <!-- Linking external CSS stylesheet for global styling -->
+    <!-- Links the external CSS stylesheet to apply layout, colors, and typography -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Header Section: Contains college logo, university title, and main navigation links -->
+    <!-- Header Section: Uses Flexbox to align the college brand on the left and navigation links on the right -->
     <header>
         <div class="logo-box">
             <img src="logo.jpeg" alt="College Logo" class="logo">
@@ -19,6 +20,7 @@
             </div>
         </div>
 
+        <!-- Navigation Bar: Provides links to switch between different pages and internal sections -->
         <nav>
             <a href="index.html" class="active">Home</a>
             <a href="club.html">Clubs</a>
@@ -27,7 +29,14 @@
         </nav>
     </header>
 
-    <!-- Hero Banner Section: Displays uncropped group photo background with dark overlay and call-to-action button -->
+    <!-- Announcement Bar: Uses HTML marquee tag to create a scrolling news ticker for campus updates -->
+    <div class="announcement-bar">
+        <marquee behavior="scroll" direction="left" scrollamount="7">
+            🔥 <strong>LATEST UPDATES:</strong> Registrations are now open for the 24-Hour Coding Club Hackathon! &nbsp;&nbsp;|&nbsp;&nbsp; 🎸 <strong>Music Club:</strong> Acoustic Jamming &amp; Auditions this Saturday @ 3:00 PM in SAC &nbsp;&nbsp;|&nbsp;&nbsp; 🎙️ <strong>Debate Club:</strong> Inter-Batch Parliamentary Debate next Tuesday &nbsp;&nbsp;|&nbsp;&nbsp; ✨ Click on "Contact" to fill out the Club Registration Form!
+        </marquee>
+    </div>
+
+    <!-- Hero Banner Section: Displays full-width background group photo with welcome text and CTA button -->
     <section class="hero-section">
         <div class="hero-banner">
             <div class="hero-text">
@@ -41,44 +50,74 @@
         </div>
     </section>
 
-    <!-- Why Join Us Section: 4 feature cards explaining student benefits -->
+    <!-- Features Section: Uses CSS Grid to display 4 interactive cards highlighting benefits of joining clubs -->
     <section class="container">
         <p class="small-title">--- WHY JOIN US ---</p>
         <h2 class="section-heading">More Than Just Student Clubs</h2>
         <p class="section-sub">We bring together passionate students across all batches to learn, innovate, perform, and grow together.</p>
 
         <div class="grid-box">
-            <!-- Feature Card 1: Networking -->
+            <!-- onclick="location.href='club.html'" redirects the user to the Clubs page when a card is clicked -->
             <div class="card" onclick="location.href='club.html'">
                 <div class="icon">👥</div>
                 <h3>Meet New People</h3>
-                <p>Connect with like-minded peers, seniors, and mentors across campus. Build lasting friendships and expand your college network.</p>
+                <p>Connect with like-minded peers, seniors, and mentors across campus. Build lasting friendships, expand your college network, and work together in friendly student teams.</p>
             </div>
 
-            <!-- Feature Card 2: Skill Enhancement -->
             <div class="card" onclick="location.href='club.html'">
                 <div class="icon">💡</div>
                 <h3>Learn &amp; Grow</h3>
-                <p>Gain practical hands-on skills beyond classroom lectures through weekly peer-learning bootcamps, workshops, and labs.</p>
+                <p>Gain practical hands-on skills beyond classroom lectures. Participate in weekly peer-learning bootcamps, coding labs, art sessions, and personality development workshops.</p>
             </div>
 
-            <!-- Feature Card 3: Idea Pitching -->
             <div class="card" onclick="location.href='club.html'">
                 <div class="icon">🚀</div>
                 <h3>Share Ideas</h3>
-                <p>Pitch your thoughts openly, collaborate on hackathon concepts, and turn your creative imagination into real-world impact.</p>
+                <p>Have a startup concept, hackathon solution, or creative script? Pitch your thoughts openly, get guidance from club leads, and turn your imagination into real-world impact.</p>
             </div>
 
-            <!-- Feature Card 4: Events Participation -->
             <div class="card" onclick="location.href='club.html'">
                 <div class="icon">⭐</div>
                 <h3>Join Campus Events</h3>
-                <p>Take an active part in 24-hour hackathons, cultural nights, debate championships, art exhibitions, and sports tournaments.</p>
+                <p>Take an active part in 24-hour hackathons, coding contests, cultural nights, debate championships, art exhibitions, and inter-university sports tournaments.</p>
             </div>
         </div>
     </section>
 
-    <!-- About Section: Detailed introduction to the college club platform -->
+    <!-- Upcoming Events Section: Displays scheduled college events with direct registration links -->
+    <section class="container" style="padding-top: 10px;">
+        <p class="small-title">--- MARK YOUR CALENDAR ---</p>
+        <h2 class="section-heading">Upcoming Campus Events</h2>
+        <p class="section-sub">Participate in our upcoming workshops, competitions, and cultural evenings.</p>
+
+        <div class="grid-box">
+            <div class="card">
+                <span class="badge">📅 10 NOV 2026 • CODING CLUB</span>
+                <h3>🔥 24-Hour Code-A-Thon Sprint</h3>
+                <p>Form a team of up to 4 students, build an innovative web or software prototype, and win exciting prizes and certificates.</p>
+                <p class="card-meta">📍 Venue: Computer Lab 1 | 🕒 10:00 AM Onwards</p>
+                <a href="Contact.html#join-form" class="outline-btn">Register Now →</a>
+            </div>
+
+            <div class="card">
+                <span class="badge">📅 15 NOV 2026 • MUSIC &amp; DRAMA</span>
+                <h3>🎭 Acoustic Night &amp; Street Play</h3>
+                <p>An evening of soulful live band performances followed by an impactful Nukkad Natak by our Drama Club members.</p>
+                <p class="card-meta">📍 Venue: Main Auditorium | 🕒 5:00 PM Onwards</p>
+                <a href="Contact.html#join-form" class="outline-btn">Register Now →</a>
+            </div>
+
+            <div class="card">
+                <span class="badge">📅 22 NOV 2026 • DEBATE &amp; ART</span>
+                <h3>🎙️ Youth Parliament &amp; Art Expo</h3>
+                <p>Speak on current global affairs at our campus MUN debate and explore handmade paintings and crafts at the studio gallery.</p>
+                <p class="card-meta">📍 Venue: Seminar Hall 2 | 🕒 2:00 PM Onwards</p>
+                <a href="Contact.html#join-form" class="outline-btn">Register Now →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section: Linked via id="about" for smooth internal page scrolling from the navigation bar -->
     <section id="about" class="container">
         <p class="small-title">--- WHO WE ARE ---</p>
         <h2 class="section-heading">About College Club Hub</h2>
@@ -87,15 +126,68 @@
         <div class="info-box">
             <h3>🌟 Introduction to Our Campus Ecosystem</h3>
             <p>
-                <strong>College Club Hub</strong> is the official student-driven activity portal of <strong>Sitare University</strong>. Designed to bridge academic learning with practical exposure, our platform connects students with diverse campus communities.
+                <strong>College Club Hub</strong> is the official student-driven activity portal of <strong>Sitare University</strong>. Designed to bridge academic learning with practical exposure, our platform connects students with diverse campus communities where they can explore their talents, collaborate on interdisciplinary projects, and develop strong confidence.
             </p>
 
             <h3>🎯 Our Vision &amp; 6 Core Clubs</h3>
             <p>
-                Every student possesses unique potential—whether it is writing clean code, playing musical instruments, performing theater, debating global issues, painting canvases, or winning sports trophies. Our hub unites <strong>6 official college clubs</strong>—<strong>Coding Club, Music Club, Drama Club, Sports Club, Debate Club,</strong> and <strong>Art &amp; Craft Club</strong>—under one digital platform.
+                Every student possesses unique potential—whether it is writing clean code, playing musical instruments, performing theater, debating global issues, painting canvases, or winning sports trophies. Our hub unites <strong>6 official college clubs</strong>—<strong>Coding Club, Music Club, Drama Club, Sports Club, Debate Club,</strong> and <strong>Art &amp; Craft Club</strong>—under one digital platform so students can easily discover schedules, coordinators, and activities.
+            </p>
+
+            <h3>🏆 Key Benefits for Students</h3>
+            <p>
+                • <strong>Hands-on Project Experience:</strong> Build portfolios for internships and national competitions like Smart India Hackathon (SIH).<br>
+                • <strong>Leadership &amp; Teamwork:</strong> Organize college fests, manage club events, and mentor junior batches.<br>
+                • <strong>All-Round Personality Growth:</strong> Improve communication, stage confidence, physical fitness, and creative thinking.
             </p>
         </div>
     </section>
+
+    <!-- FAQ Section: Uses HTML5 <details> and <summary> tags to create expandable accordions without JavaScript -->
+    <section class="container" style="padding-top: 10px;">
+        <p class="small-title">--- HAVE QUESTIONS? ---</p>
+        <h2 class="section-heading">Frequently Asked Questions (FAQs)</h2>
+        <p class="section-sub">Click on any question below to view the answer.</p>
+
+        <div class="faq-container">
+            <details class="faq-item">
+                <summary>1. Can first-semester students join multiple clubs?</summary>
+                <p>Yes! Every student is encouraged to join up to 2 or 3 clubs based on their interests in coding, arts, music, debate, or sports so they can explore both technical and cultural activities.</p>
+            </details>
+
+            <details class="faq-item">
+                <summary>2. Is there any membership fee to join a club?</summary>
+                <p>No, joining any official club at Sitare University is 100% free for all enrolled students. All equipment, lab access, and mentorship are provided by the college.</p>
+            </details>
+
+            <details class="faq-item">
+                <summary>3. Do I need prior experience before joining the Coding, Music, or Drama Club?</summary>
+                <p>Not at all! Our clubs are beginner-friendly. Seniors and club coordinators conduct regular introductory workshops and training sessions from scratch.</p>
+            </details>
+
+            <details class="faq-item">
+                <summary>4. How can I register to become a member of a club?</summary>
+                <p>Simply go to the <strong>Contact</strong> page, fill out the "Join a Club" Student Registration Form at the bottom, or reach out directly to the respective club coordinator during weekly meeting hours.</p>
+            </details>
+        </div>
+    </section>
+
+    <!-- Footer Section: Displays quick navigation links and copyright information at the bottom of the page -->
+    <footer>
+        <div class="footer-content">
+            <div>
+                <h3>SITARE UNIVERSITY - COLLEGE CLUB HUB</h3>
+                <p>Empowering students to learn, innovate, and lead beyond classrooms.</p>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="club.html">Clubs</a>
+                <a href="club-des.html">Coding Club</a>
+                <a href="Contact.html">Contact &amp; Join</a>
+            </div>
+        </div>
+        <p class="copyright">© 2026 College Club Hub | Sitare University | Designed by Himani &amp; Team</p>
+    </footer>
 
 </body>
 </html>

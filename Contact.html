@@ -29,9 +29,9 @@
     <section class="container">
         <p class="small-title">--- GET IN TOUCH ---</p>
         <h2 class="section-heading">College Contact &amp; Club Coordinators</h2>
-        <p class="section-sub">Have questions about joining a club or organizing an event? Reach out to our official welfare office or club coordinators below.</p>
+        <p class="section-sub">Have questions about joining a club or organizing an event? Reach out to our official welfare office or club coordinators.</p>
 
-        <!-- Official College Contact Information Box -->
+        <!-- Official College Contact Information Banner -->
         <div class="info-box" style="margin-bottom: 50px;">
             <h3>🏛️ Official College Student Welfare Office</h3>
             <p>📍 <strong>Campus Address:</strong> Main Academic Block, Student Activity Center (SAC), Sitare University</p>
@@ -39,11 +39,10 @@
             <p>📞 <strong>Student Helpline Desk:</strong> +91 522-2789000 (Monday to Saturday: 9:00 AM – 5:00 PM)</p>
         </div>
 
-        <!-- Club Coordinators Directory Grid (6 Active Clubs) -->
-        <h2 class="section-heading" style="margin-bottom: 30px;">👨‍🏫 All Club Coordinators</h2>
+        <!-- Coordinators Grid: Displays contact details, venue, and office hours for all 6 club coordinators -->
+        <h2 class="section-heading" style="margin-bottom: 30px;">👨‍🏫 All 6 Club Coordinators</h2>
 
         <div class="grid-box">
-            <!-- Coding Club Coordinator -->
             <div class="card">
                 <span class="badge">CODING CLUB</span>
                 <h3>Himani &amp; Tech Team</h3>
@@ -54,7 +53,6 @@
                 <p>🕒 <strong>Office Hours:</strong> Fri, 4:00 PM – 6:00 PM</p>
             </div>
 
-            <!-- Music Club Coordinator -->
             <div class="card">
                 <span class="badge">MUSIC CLUB</span>
                 <h3>Rohan Mehta</h3>
@@ -65,7 +63,6 @@
                 <p>🕒 <strong>Office Hours:</strong> Sat, 3:00 PM – 5:30 PM</p>
             </div>
 
-            <!-- Drama Club Coordinator -->
             <div class="card">
                 <span class="badge">DRAMA CLUB</span>
                 <h3>Priya Verma</h3>
@@ -76,7 +73,6 @@
                 <p>🕒 <strong>Office Hours:</strong> Thu, 5:00 PM – 7:00 PM</p>
             </div>
 
-            <!-- Sports Club Coordinator -->
             <div class="card">
                 <span class="badge">SPORTS CLUB</span>
                 <h3>Rohit Singh</h3>
@@ -87,7 +83,6 @@
                 <p>🕒 <strong>Office Hours:</strong> Daily, 5:30 PM – 7:30 PM</p>
             </div>
 
-            <!-- Debate Club Coordinator -->
             <div class="card">
                 <span class="badge">DEBATE CLUB</span>
                 <h3>Ananya Sharma</h3>
@@ -98,7 +93,6 @@
                 <p>🕒 <strong>Office Hours:</strong> Tue, 4:00 PM – 5:30 PM</p>
             </div>
 
-            <!-- Art & Craft Club Coordinator -->
             <div class="card">
                 <span class="badge">ART &amp; CRAFT CLUB</span>
                 <h3>Sneha Kapoor</h3>
@@ -109,7 +103,69 @@
                 <p>🕒 <strong>Office Hours:</strong> Sat, 2:00 PM – 4:30 PM</p>
             </div>
         </div>
+
+        <!-- Student Registration Form: Uses HTML5 form validation ('required') and onsubmit event handler -->
+        <div id="join-form" style="margin-top: 70px;">
+            <p class="small-title">--- STUDENT REGISTRATION ---</p>
+            <h2 class="section-heading">Join a Club / Event Registration Form</h2>
+            <p class="section-sub">Fill out your details below to register as a club member or sign up for upcoming workshops.</p>
+
+            <!-- onsubmit shows a confirmation alert, clears form fields via this.reset(), and prevents page reload -->
+            <form class="registration-form" onsubmit="alert('🎉 Thank you for registering! The club coordinator will contact you soon.'); this.reset(); return false;">
+                <div class="form-group">
+                    <label>Full Name *</label>
+                    <input type="text" placeholder="Enter your full name" required>
+                </div>
+
+                <div class="form-group">
+                    <label>College Email ID *</label>
+                    <input type="email" placeholder="example@sitare.org" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Branch &amp; Semester *</label>
+                    <input type="text" placeholder="e.g., B.Tech CS - Semester 1" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Select Club to Join *</label>
+                    <select required>
+                        <option value="">-- Choose a Club --</option>
+                        <option value="Coding Club">💻 Coding Club</option>
+                        <option value="Music Club">🎸 Music Club</option>
+                        <option value="Drama Club">🎭 Drama Club</option>
+                        <option value="Sports Club">⚽ Sports Club</option>
+                        <option value="Debate Club">🎙️ Debate Club</option>
+                        <option value="Art & Craft Club">🎨 Art &amp; Craft Club</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Why do you want to join this club? (Optional)</label>
+                    <textarea rows="4" placeholder="Share your interests, skills, or project ideas..."></textarea>
+                </div>
+
+                <button type="submit" class="btn" style="border: none; cursor: pointer; width: 100%;">Submit Registration →</button>
+            </form>
+        </div>
     </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <div>
+                <h3>SITARE UNIVERSITY - COLLEGE CLUB HUB</h3>
+                <p>Empowering students to learn, innovate, and lead beyond classrooms.</p>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="club.html">Clubs</a>
+                <a href="club-des.html">Coding Club</a>
+                <a href="Contact.html">Contact &amp; Join</a>
+            </div>
+        </div>
+        <p class="copyright">© 2026 College Club Hub | Sitare University | Designed by Himani &amp; Team</p>
+    </footer>
 
 </body>
 </html>
