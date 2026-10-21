@@ -34,12 +34,12 @@ header {
     gap: 20px;
 }
 
-/* Logo Styling: Maintains a clean rectangular shape with white background padding */
+/* Logo Styling: Slightly enlarged height (84px) in a clean rectangular shape */
 .logo {
-    height: 72px;
+    height: 84px;
     width: auto;
     background-color: #ffffff;
-    padding: 5px 10px;
+    padding: 6px 12px;
     border-radius: 8px;
     border: 2px solid #2580ff;
 }
@@ -88,21 +88,21 @@ nav a:hover, nav a.active {
     border-bottom: 1px solid #2580ff;
 }
 
-/* Hero Banner: Combines a dark linear-gradient overlay with group.jpeg for clear text contrast */
+/* Hero Banner: Enlarged min-height (620px) so the background group photo looks grand and clear */
 .hero-section {
-    padding: 35px 6% 15px;
+    padding: 35px 5% 15px;
 }
 
 .hero-banner {
-    background-image: linear-gradient(to right, rgba(4, 10, 22, 0.90) 0%, rgba(6, 15, 32, 0.50) 42%, rgba(6, 15, 32, 0.12) 100%), url('group.jpeg');
+    background-image: linear-gradient(to right, rgba(4, 10, 22, 0.88) 0%, rgba(6, 15, 32, 0.45) 40%, rgba(6, 15, 32, 0.10) 100%), url('group.jpeg');
     background-size: cover;
     background-position: center 78%; /* Aligns background image to focus on the students and crop top trees */
-    min-height: 540px;
-    border-radius: 20px;
+    min-height: 620px;
+    border-radius: 22px;
     border: 1px solid #1e3a6d;
     display: flex;
     align-items: center;
-    padding: 65px;
+    padding: 75px 65px;
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.65);
 }
 
@@ -494,7 +494,7 @@ nav a:hover, nav a.active {
     white-space: pre-line;
 }
 
-/* Website Footer Styling */
+/* Website Footer Styling with Attractive Highlight Badges instead of Duplicate Links */
 footer {
     background-color: #060d1b;
     border-top: 2px solid #162a4a;
@@ -523,20 +523,20 @@ footer {
     font-size: 18px;
 }
 
-.footer-links {
+.footer-highlights {
     display: flex;
-    gap: 30px;
+    flex-wrap: wrap;
+    gap: 15px;
 }
 
-.footer-links a {
+.footer-pill {
+    background-color: #0b172a;
+    border: 1px solid #2580ff;
     color: #e2e8f0;
-    text-decoration: none;
-    font-size: 19px;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 17px;
     font-weight: bold;
-}
-
-.footer-links a:hover {
-    color: #2580ff;
 }
 
 .copyright {
