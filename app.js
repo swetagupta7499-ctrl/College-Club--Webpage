@@ -1,4 +1,9 @@
-// Function to show detailed popup modal when a club card is clicked
+/* ==========================================================
+   Function: showClub(clubName)
+   Purpose: Dynamically populates and displays the modal popup 
+   with detailed descriptions, schedules, and activities when 
+   a specific club card is clicked on club.html.
+   ========================================================== */
 function showClub(clubName) {
     var tag = document.getElementById("club-tag");
     var title = document.getElementById("club-title");
@@ -7,14 +12,8 @@ function showClub(clubName) {
     var activities = document.getElementById("club-activities");
     var popup = document.getElementById("popup-box");
 
-    if (clubName === "ai") {
-        tag.innerText = "ARTIFICIAL INTELLIGENCE & MACHINE LEARNING";
-        title.innerText = "🤖 AI Club";
-        desc.innerText = "The AI Club is dedicated to exploring Artificial Intelligence, Machine Learning, Deep Learning, Linear Algebra for Data Science, and Generative AI. Students work together on real datasets, build intelligent web apps, and publish research projects.";
-        schedule.innerText = "📅 Weekly Meet: Every Wednesday @ 4:30 PM | 📍 Venue: AI & Data Science Lab | 👨‍🏫 Coordinator: Aryan Gupta";
-        activities.innerText = "✔ Hands-on Python, Pandas, Scikit-Learn & Neural Network Bootcamps\n✔ Building AI Chatbots, Image Recognition & Smart Campus Tools\n✔ Kaggle Data Science Competitions & AI Hackathon Mentorship\n✔ Beginner-friendly sessions—no prior AI experience required!";
-    } 
-    else if (clubName === "music") {
+    // Conditional statements to assign rich content based on clicked club
+    if (clubName === "music") {
         tag.innerText = "VOCALS, INSTRUMENTS & LIVE BAND";
         title.innerText = "🎸 Music Club";
         desc.innerText = "The Music Club is the soulful heart of our campus, bringing together vocalists, guitarists, keyboard players, drummers, and music composers. Whether you sing classical melodies, Bollywood hits, or rock anthems, this is your stage.";
@@ -50,16 +49,23 @@ function showClub(clubName) {
         activities.innerText = "✔ Pencil Sketching, Acrylic, Watercolor & Canvas Painting Workshops\n✔ Origami, DIY Paper Crafts, Pottery & Best-Out-Of-Waste Creations\n✔ Calligraphy, Poster Making, Rangoli & Digital Illustration\n✔ Annual Campus Art Exhibition & Cultural Fest Stage Designing";
     }
 
-    // Display the modal box
+    // Make the modal visible by setting display flex
     popup.style.display = "flex";
 }
 
-// Function to close the popup modal
+/* ==========================================================
+   Function: closePopup()
+   Purpose: Hides the modal popup box when the close button is clicked.
+   ========================================================== */
 function closePopup() {
     document.getElementById("popup-box").style.display = "none";
 }
 
-// Close the popup if the user clicks outside the modal box
+/* ==========================================================
+   Window Event: Click outside modal to close
+   Purpose: Automatically closes the popup if the user clicks 
+   on the dark backdrop outside the modal card.
+   ========================================================== */
 window.onclick = function(event) {
     var popup = document.getElementById("popup-box");
     if (event.target === popup) {

@@ -1,5 +1,4 @@
-
-/* Basic Page Reset */
+/* Basic Page Reset and Smooth Scrolling */
 * {
     margin: 0;
     padding: 0;
@@ -12,10 +11,10 @@ body {
     background-color: #050b16;
     color: #ffffff;
     line-height: 1.75;
-    font-size: 20px; /* Large base font size so text is never small */
+    font-size: 20px; /* Large readable base font size */
 }
 
-/* Spacious Header & Navigation Bar (Fixes small navbar text in screenshot) */
+/* Spacious Header & Navigation Bar */
 header {
     display: flex;
     justify-content: space-between;
@@ -34,7 +33,7 @@ header {
     gap: 20px;
 }
 
-/* Rectangular Logo - Large and Clear */
+/* Rectangular Logo Styling */
 .logo {
     height: 72px;
     width: auto;
@@ -56,19 +55,18 @@ header {
     font-size: 30px;
     color: #ffffff;
     font-weight: 800;
-    letter-spacing: 0.5px;
 }
 
 nav {
     display: flex;
     align-items: center;
-    gap: 45px; /* Wide spacing between Home, Clubs, About, Contact */
+    gap: 45px;
 }
 
 nav a {
     color: #e2e8f0;
     text-decoration: none;
-    font-size: 22px; /* Large, bold navigation links */
+    font-size: 22px;
     font-weight: 700;
     padding-bottom: 8px;
     transition: 0.2s;
@@ -79,7 +77,7 @@ nav a:hover, nav a.active {
     border-bottom: 4px solid #2580ff;
 }
 
-/* Hero Banner with Background Group Photo */
+/* Hero Banner with Uncropped Background Group Photo */
 .hero-section {
     padding: 35px 6% 15px;
 }
@@ -87,7 +85,7 @@ nav a:hover, nav a.active {
 .hero-banner {
     background-image: linear-gradient(to right, rgba(4, 10, 22, 0.90) 0%, rgba(6, 15, 32, 0.50) 42%, rgba(6, 15, 32, 0.12) 100%), url('group.jpeg');
     background-size: cover;
-    background-position: center 78%; /* Crops top trees and focuses on the group */
+    background-position: center 78%; /* Crops extra top trees and focuses clearly on the people */
     min-height: 540px;
     border-radius: 20px;
     border: 1px solid #1e3a6d;
@@ -165,7 +163,7 @@ nav a:hover, nav a.active {
     color: #ffffff;
 }
 
-/* Spacious Section Container & Wide Grid Layout (Prevents Congested Pages) */
+/* Spacious Container & Grid Layout (Prevents congestion) */
 .container {
     padding: 75px 6%;
     text-align: center;
@@ -184,7 +182,6 @@ nav a:hover, nav a.active {
     margin: 0 auto 55px;
 }
 
-/* Minimum 360px per card so cards are wide, spacious, and never cramped */
 .grid-box {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
@@ -245,7 +242,7 @@ nav a:hover, nav a.active {
     margin-bottom: 18px;
 }
 
-/* About & Contact Info Box */
+/* Info Box Styling */
 .info-box {
     background-color: #0b172a;
     border: 1px solid #162a4a;
@@ -270,7 +267,7 @@ nav a:hover, nav a.active {
     margin-bottom: 14px;
 }
 
-/* Coding Club Page Banner */
+/* Coding Club Banner Styling */
 .coding-banner {
     display: flex;
     flex-wrap: wrap;
@@ -337,7 +334,7 @@ nav a:hover, nav a.active {
     font-size: 17px;
 }
 
-/* Popup Modal Box */
+/* Popup Modal Styling */
 .modal {
     display: none;
     position: fixed;
@@ -400,5 +397,5 @@ nav a:hover, nav a.active {
     margin: 18px 0 28px;
     color: #e2e8f0;
     font-size: 19px;
-    white-space: pre-line; /* Keeps line breaks for bullet points */
+    white-space: pre-line;
 }

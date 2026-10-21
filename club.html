@@ -26,44 +26,34 @@
         </nav>
     </header>
 
-    <!-- All 7 Clubs Section with Rich Information -->
+    <!-- Clubs Grid Section: Displays cards for all 6 active clubs -->
     <section class="container">
         <p class="small-title">--- EXPLORE COMMUNITIES ---</p>
-        <h2 class="section-heading">Discover &amp; Join Our 7 Campus Clubs</h2>
-        <p class="section-sub">Click on any club card below to read its complete overview, weekly schedule, and key activities.</p>
+        <h2 class="section-heading">Discover &amp; Join Our Campus Clubs</h2>
+        <p class="section-sub">Click on any club card below to read its complete overview, weekly schedule, and detailed activities.</p>
 
         <div class="grid-box">
-            <!-- 1. Coding Club -->
+            <!-- 1. Coding Club Card: Redirects to dedicated club-des.html page -->
             <div class="card" onclick="location.href='club-des.html'">
                 <span class="badge">SOFTWARE &amp; FULL-STACK DEV</span>
                 <div class="icon">💻</div>
                 <h3>Coding Club</h3>
-                <p>Master HTML, CSS, JavaScript, C++, Python, Data Structures &amp; Algorithms (DSA), and Git/GitHub. Build live projects and compete in national hackathons like SIH.</p>
+                <p>Master HTML, CSS, JavaScript, C++, Python, Data Structures &amp; Algorithms (DSA), and Git/GitHub. Build live projects and compete in national hackathons.</p>
                 <p class="card-meta">📅 <strong>Meet:</strong> Friday, 4:00 PM | 📍 CS Lab 1</p>
                 <a href="club-des.html" class="outline-btn">Explore Coding Club Page →</a>
             </div>
 
-            <!-- 2. AI Club -->
-            <div class="card" onclick="showClub('ai')">
-                <span class="badge">MACHINE LEARNING &amp; DATA SCIENCE</span>
-                <div class="icon">🤖</div>
-                <h3>AI Club</h3>
-                <p>Dive deep into Artificial Intelligence, Machine Learning, Linear Algebra for Data Science, Neural Networks, and Generative AI tools to build smart applications.</p>
-                <p class="card-meta">📅 <strong>Meet:</strong> Wednesday, 4:30 PM | 📍 AI Lab</p>
-                <button class="outline-btn">View Full Club Details →</button>
-            </div>
-
-            <!-- 3. Music Club -->
+            <!-- 2. Music Club Card: Triggers showClub('music') function in app.js -->
             <div class="card" onclick="showClub('music')">
                 <span class="badge">VOCALS, INSTRUMENTS &amp; BAND</span>
                 <div class="icon">🎸</div>
                 <h3>Music Club</h3>
-                <p>Unleash your passion for music through classical and western vocals, guitar, keyboard, drums, band jamming sessions, and live acoustic concerts during fests.</p>
+                <p>Unleash your passion for music through classical and western vocals, guitar, keyboard, drums, band jamming sessions, and live acoustic concerts.</p>
                 <p class="card-meta">📅 <strong>Meet:</strong> Saturday, 3:00 PM | 📍 Music Room</p>
                 <button class="outline-btn">View Full Club Details →</button>
             </div>
 
-            <!-- 4. Drama Club -->
+            <!-- 3. Drama Club Card: Triggers showClub('drama') function in app.js -->
             <div class="card" onclick="showClub('drama')">
                 <span class="badge">THEATER, ACTING &amp; SCRIPT</span>
                 <div class="icon">🎭</div>
@@ -73,38 +63,38 @@
                 <button class="outline-btn">View Full Club Details →</button>
             </div>
 
-            <!-- 5. Sports Club -->
+            <!-- 4. Sports Club Card: Triggers showClub('sports') function in app.js -->
             <div class="card" onclick="showClub('sports')">
                 <span class="badge">FITNESS, ATHLETICS &amp; GAMES</span>
                 <div class="icon">⚽</div>
                 <h3>Sports Club</h3>
-                <p>Build stamina, teamwork, and sportsmanship. Train daily for inter-college tournaments in cricket, football, basketball, volleyball, badminton, table tennis, and chess.</p>
-                <p class="card-meta">📅 <strong>Meet:</strong> Daily, 5:30 PM | 📍 Sports Ground</p>
+                <p>Build stamina, teamwork, and sportsmanship. Train daily for inter-college tournaments in cricket, football, basketball, badminton, and chess.</p>
+                <p class="card-meta">📅 <strong>Practice:</strong> Daily, 5:30 PM | 📍 Sports Ground</p>
                 <button class="outline-btn">View Full Club Details →</button>
             </div>
 
-            <!-- 6. Debate Club -->
+            <!-- 5. Debate Club Card: Triggers showClub('debate') function in app.js -->
             <div class="card" onclick="showClub('debate')">
                 <span class="badge">PUBLIC SPEAKING, LOGIC &amp; MUN</span>
                 <div class="icon">🎙️</div>
                 <h3>Debate Club</h3>
-                <p>Sharpen your critical thinking, stage confidence, and communication skills through Parliamentary Debates, Model United Nations (MUN), extempore speeches, and GDs.</p>
+                <p>Sharpen your critical thinking, stage confidence, and communication skills through Parliamentary Debates, Model United Nations (MUN), and group discussions.</p>
                 <p class="card-meta">📅 <strong>Meet:</strong> Tuesday, 4:00 PM | 📍 Seminar Hall 2</p>
                 <button class="outline-btn">View Full Club Details →</button>
             </div>
 
-            <!-- 7. Art & Craft Club -->
+            <!-- 6. Art & Craft Club Card: Triggers showClub('art') function in app.js -->
             <div class="card" onclick="showClub('art')">
                 <span class="badge">FINE ARTS, PAINTING &amp; DIY</span>
                 <div class="icon">🎨</div>
                 <h3>Art &amp; Craft Club</h3>
-                <p>Express your creativity through sketching, acrylic &amp; watercolor canvas painting, calligraphy, origami, clay modeling, poster design, and campus fest decorations.</p>
+                <p>Express your creativity through sketching, acrylic &amp; watercolor canvas painting, calligraphy, origami, clay modeling, and campus fest decorations.</p>
                 <p class="card-meta">📅 <strong>Meet:</strong> Saturday, 2:00 PM | 📍 Creative Studio</p>
                 <button class="outline-btn">View Full Club Details →</button>
             </div>
         </div>
 
-        <!-- Popup Box (Modal) with Rich Club Details -->
+        <!-- Popup Modal Box: Dynamically populated by app.js when a club card is clicked -->
         <div id="popup-box" class="modal">
             <div class="modal-box">
                 <span class="close-btn" onclick="closePopup()">×</span>
@@ -118,6 +108,7 @@
         </div>
     </section>
 
+    <!-- Linking external JavaScript file -->
     <script src="app.js"></script>
 </body>
 </html>
