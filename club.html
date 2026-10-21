@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Top Navigation Header -->
     <header>
         <div class="logo-container">
             <img src="logo.jpeg" alt="College Logo" class="logo">
@@ -29,7 +30,7 @@
         <p class="subtitle">Click on any club below to explore its full description, activities, and roadmap.</p>
 
         <div class="clubs-grid">
-            <!-- 1. Coding Club -> Opens separate decorative file club-des.html -->
+            <!-- 1. Coding Club Card -> Redirects to club-des.html -->
             <div class="club-card" onclick="window.location.href='club-des.html'">
                 <div class="club-badge">SOFTWARE &amp; DEV</div>
                 <div class="icon-circle">💻</div>
@@ -38,7 +39,7 @@
                 <a href="club-des.html" class="view-btn">Explore Coding Club →</a>
             </div>
 
-            <!-- 2. AI Club -->
+            <!-- 2. AI Club Card -->
             <div class="club-card" onclick="openClubModal('ai')">
                 <div class="club-badge">MACHINE LEARNING &amp; DATA</div>
                 <div class="icon-circle">🤖</div>
@@ -47,7 +48,7 @@
                 <button class="view-btn">View Full Details →</button>
             </div>
 
-            <!-- 3. Music Club -->
+            <!-- 3. Music Club Card -->
             <div class="club-card" onclick="openClubModal('music')">
                 <div class="club-badge">MELODY &amp; JAMMING</div>
                 <div class="icon-circle">🎸</div>
@@ -56,7 +57,7 @@
                 <button class="view-btn">View Full Details →</button>
             </div>
 
-            <!-- 4. Drama Club -->
+            <!-- 4. Drama Club Card -->
             <div class="club-card" onclick="openClubModal('drama')">
                 <div class="club-badge">THEATER &amp; ACTING</div>
                 <div class="icon-circle">🎭</div>
@@ -65,7 +66,7 @@
                 <button class="view-btn">View Full Details →</button>
             </div>
 
-            <!-- 5. Sports Club -->
+            <!-- 5. Sports Club Card -->
             <div class="club-card" onclick="openClubModal('sports')">
                 <div class="club-badge">FITNESS &amp; GAMES</div>
                 <div class="icon-circle">⚽</div>
@@ -74,7 +75,7 @@
                 <button class="view-btn">View Full Details →</button>
             </div>
 
-            <!-- 6. Debate Club -->
+            <!-- 6. Debate Club Card -->
             <div class="club-card" onclick="openClubModal('debate')">
                 <div class="club-badge">PUBLIC SPEAKING &amp; MUN</div>
                 <div class="icon-circle">🎙️</div>
@@ -83,17 +84,17 @@
                 <button class="view-btn">View Full Details →</button>
             </div>
 
-            <!-- 7. Art & Craft Club -->
+            <!-- 7. Art & Craft Club Card -->
             <div class="club-card" onclick="openClubModal('art')">
                 <div class="club-badge">CREATIVITY &amp; DESIGN</div>
                 <div class="icon-circle">🎨</div>
                 <h3>Art &amp; Craft Club</h3>
-                <p>Explore sketching, canvas painting,origami, DIY crafts, campus wall murals, and creative exhibitions.</p>
+                <p>Explore sketching, canvas painting, origami, DIY crafts, campus wall murals, and creative exhibitions.</p>
                 <button class="view-btn">View Full Details →</button>
             </div>
         </div>
 
-        <!-- Popup Modal for Club Details -->
+        <!-- Popup Modal for Displaying Full Club Descriptions -->
         <div id="club-modal" class="modal">
             <div class="modal-content">
                 <span class="close-btn" onclick="closeClubModal()">&times;</span>

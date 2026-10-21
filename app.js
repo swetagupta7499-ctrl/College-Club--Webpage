@@ -62,6 +62,7 @@ const clubData = {
     }
 };
 
+// Function to open the modal and display selected club details
 function openClubModal(key) {
     const modal = document.getElementById('club-modal');
     if (!modal) return;
@@ -78,6 +79,7 @@ function openClubModal(key) {
     }
 }
 
+// Function to close the club details modal
 function closeClubModal() {
     const modal = document.getElementById('club-modal');
     if (modal) {
@@ -85,7 +87,7 @@ function closeClubModal() {
     }
 }
 
-// Close modal when clicking outside the modal box
+// Close the modal automatically if the user clicks outside the modal box
 window.addEventListener('click', function(event) {
     const modal = document.getElementById('club-modal');
     if (event.target === modal) {
