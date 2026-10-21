@@ -1,96 +1,46 @@
-// Detailed descriptions for AI, Music, Drama, Sports, Debate, and Art & Craft Clubs
-const clubData = {
-    ai: {
-        tag: "ARTIFICIAL INTELLIGENCE & ML",
-        title: "🤖 AI Club",
-        desc: "The AI Club explores the cutting-edge world of Artificial Intelligence, Machine Learning, Linear Algebra for Data Science, and Generative AI. Students collaborate on smart automation projects and research.",
-        highlights: [
-            "🧠 Hands-on Python, Machine Learning & Neural Network Workshops",
-            "🤖 Building AI Chatbots, Computer Vision & Smart Prototypes",
-            "📊 Kaggle Competitions & AI Hackathon Mentorship"
-        ]
-    },
-    music: {
-        tag: "VOCALS, INSTRUMENTS & BAND",
-        title: "🎸 Music Club",
-        desc: "The Music Club brings together singers, instrumentalists, and music producers across campus. From classical melodies to rock bands and acoustic jamming nights, we create magic through sound.",
-        highlights: [
-            "🎤 Weekly Acoustic Jamming & Open Mic Evenings",
-            "🎹 Guitar, Keyboard, Drums & Vocal Training Sessions",
-            "🎶 Live Band Performances at Annual College Festivals"
-        ]
-    },
-    drama: {
-        tag: "THEATER, ACTING & SCRIPT",
-        title: "🎭 Drama Club",
-        desc: "The Drama Club is the powerhouse of storytelling and expressive arts. Whether you love stage acting, street plays for social awareness, direction, or scriptwriting, the stage is yours!",
-        highlights: [
-            "🎬 Street Plays & Full-Length Stage Theater Productions",
-            "✍️ Scriptwriting, Voice Modulation & Acting Improv Workshops",
-            "🏆 Participation in Inter-University Cultural Festivals"
-        ]
-    },
-    sports: {
-        tag: "ATHLETICS & TEAM SPIRIT",
-        title: "⚽ Sports Club",
-        desc: "Stay fit, build discipline, and represent our college at state and national tournaments. Whether you play outdoor field games or indoor strategy games, there is a team waiting for you.",
-        highlights: [
-            "🏅 Inter-College Cricket, Football, Volleyball & Basketball Leagues",
-            "♟️ Indoor Chess, Table Tennis & Badminton Championships",
-            "💪 Daily Evening Practice & Fitness Conditioning"
-        ]
-    },
-    debate: {
-        tag: "ORATORY, LOGIC & MUN",
-        title: "🎙️ Debate Club",
-        desc: "The Debate Club is a platform for thinkers, speakers, and leaders. We host parliamentary debates, Youth Parliaments, Model United Nations (MUN), extempore speeches, and group discussions on global issues.",
-        highlights: [
-            "🗣️ Weekly British & Asian Parliamentary Debate Sessions",
-            "🌍 Annual College Model United Nations (MUN) Conference",
-            "🏆 Public Speaking, Pitching & Interview Communication Workshops"
-        ]
-    },
-    art: {
-        tag: "FINE ARTS, DIY & DESIGN",
-        title: "🎨 Art & Craft Club",
-        desc: "The Art & Craft Club is our campus creative studio. We celebrate visual expression through sketching, acrylic & watercolor painting, calligraphy, origami, clay modeling, and campus fest decorations.",
-        highlights: [
-            "🖌️ Canvas Painting, Sketching & Digital Illustration Workshops",
-            "🏮 DIY Craft, Origami, Pottery & Eco-Friendly Art Sessions",
-            "🖼️ Annual Campus Art Exhibition & Fest Backdrop Designing"
-        ]
-    }
-};
+// Function to show popup modal with club details when a club card is clicked
+function showClub(clubName) {
+    var title = document.getElementById("club-title");
+    var desc = document.getElementById("club-description");
+    var activities = document.getElementById("club-activities");
+    var popup = document.getElementById("popup-box");
 
-// Function to open the modal and display selected club details
-function openClubModal(key) {
-    const modal = document.getElementById('club-modal');
-    if (!modal) return;
-
-    const data = clubData[key];
-    if (data) {
-        document.getElementById('modal-tag').innerText = data.tag;
-        document.getElementById('modal-title').innerText = data.title;
-        document.getElementById('modal-desc').innerText = data.desc;
-        document.getElementById('modal-highlights').innerHTML = data.highlights
-            .map(item => `<div class="highlight-item">${item}</div>`)
-            .join('');
-        modal.style.display = 'flex';
+    if (clubName === "ai") {
+        title.innerText = "🤖 AI Club";
+        desc.innerText = "The AI Club explores Artificial Intelligence, Machine Learning, Data Science, and Python programming to build smart models.";
+        activities.innerText = "Key Activities: Python & ML Workshops, AI Chatbot Projects, and Kaggle Competitions.";
+    } 
+    else if (clubName === "music") {
+        title.innerText = "🎸 Music Club";
+        desc.innerText = "The Music Club brings together singers and instrumentalists across campus for acoustic nights and band performances.";
+        activities.innerText = "Key Activities: Weekly Jamming Sessions, Vocal & Instrument Training, and College Fest Concerts.";
+    } 
+    else if (clubName === "drama") {
+        title.innerText = "🎭 Drama Club";
+        desc.innerText = "The Drama Club is the hub of theater arts, stage acting, street plays (Nukkad Natak), and scriptwriting.";
+        activities.innerText = "Key Activities: Stage Plays, Street Plays for Social Awareness, and Acting Workshops.";
+    } 
+    else if (clubName === "sports") {
+        title.innerText = "⚽ Sports Club";
+        desc.innerText = "The Sports Club promotes physical fitness, teamwork, and represents our college in inter-university tournaments.";
+        activities.innerText = "Key Activities: Cricket, Football, Basketball, Badminton, Chess, and Daily Fitness Training.";
+    } 
+    else if (clubName === "debate") {
+        title.innerText = "🎙️ Debate Club";
+        desc.innerText = "The Debate Club helps students build public speaking confidence, logical thinking, and leadership skills.";
+        activities.innerText = "Key Activities: Parliamentary Debates, Model United Nations (MUN), and Group Discussions.";
+    } 
+    else if (clubName === "art") {
+        title.innerText = "🎨 Art & Craft Club";
+        desc.innerText = "The Art & Craft Club celebrates visual creativity through painting, sketching, origami, and DIY campus crafts.";
+        activities.innerText = "Key Activities: Canvas Painting, Sketching Workshops, DIY Crafts, and Annual Art Exhibitions.";
     }
+
+    // Show the popup box
+    popup.style.display = "flex";
 }
 
-// Function to close the club details modal
-function closeClubModal() {
-    const modal = document.getElementById('club-modal');
-    if (modal) {
-        modal.style.display = 'none';
-    }
+// Function to close the popup modal
+function closePopup() {
+    document.getElementById("popup-box").style.display = "none";
 }
-
-// Close the modal automatically if the user clicks outside the modal box
-window.addEventListener('click', function(event) {
-    const modal = document.getElementById('club-modal');
-    if (event.target === modal) {
-        modal.style.display = 'none';
-    }
-});

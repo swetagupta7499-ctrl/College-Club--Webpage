@@ -7,15 +7,17 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Top Navigation Header -->
+
+    <!-- Header Section -->
     <header>
-        <div class="logo-container">
+        <div class="logo-box">
             <img src="logo.jpeg" alt="College Logo" class="logo">
-            <div class="logo-text">
-                <span class="univ-name">SITARE UNIVERSITY</span>
-                <span class="club-title">COLLEGE CLUB HUB</span>
+            <div>
+                <p class="college-name">SITARE UNIVERSITY</p>
+                <h2 class="hub-title">COLLEGE CLUB HUB</h2>
             </div>
         </div>
+
         <nav>
             <a href="index.html">Home</a>
             <a href="club.html" class="active">Clubs</a>
@@ -24,89 +26,90 @@
         </nav>
     </header>
 
-    <main class="page-container">
-        <p class="why-us"><span></span> EXPLORE COMMUNITIES <span></span></p>
-        <h2>Discover &amp; Join Our Clubs</h2>
-        <p class="subtitle">Click on any club below to explore its full description, activities, and roadmap.</p>
+    <!-- All 7 Clubs Section -->
+    <section class="container">
+        <p class="small-title">--- EXPLORE COMMUNITIES ---</p>
+        <h2 class="section-heading">Discover & Join Our Clubs</h2>
+        <p class="section-sub">Click on any club below to view its full description and activities.</p>
 
-        <div class="clubs-grid">
-            <!-- 1. Coding Club Card -> Redirects to club-des.html -->
-            <div class="club-card" onclick="window.location.href='club-des.html'">
-                <div class="club-badge">SOFTWARE &amp; DEV</div>
-                <div class="icon-circle">💻</div>
+        <div class="grid-box">
+            <!-- 1. Coding Club (Opens separate decorative page club-des.html) -->
+            <div class="card" onclick="location.href='club-des.html'">
+                <span class="badge">SOFTWARE & DEV</span>
+                <div class="icon">💻</div>
                 <h3>Coding Club</h3>
-                <p>Master Full-Stack Web Development, DSA, Competitive Programming, and build real-world hackathon projects.</p>
-                <a href="club-des.html" class="view-btn">Explore Coding Club →</a>
+                <p>Learn Web Development, DSA, Competitive Programming, and build hackathon projects.</p>
+                <a href="club-des.html" class="outline-btn">Explore Coding Club →</a>
             </div>
 
-            <!-- 2. AI Club Card -->
-            <div class="club-card" onclick="openClubModal('ai')">
-                <div class="club-badge">MACHINE LEARNING &amp; DATA</div>
-                <div class="icon-circle">🤖</div>
+            <!-- 2. AI Club -->
+            <div class="card" onclick="showClub('ai')">
+                <span class="badge">MACHINE LEARNING</span>
+                <div class="icon">🤖</div>
                 <h3>AI Club</h3>
-                <p>Dive into Artificial Intelligence, Machine Learning, Deep Learning, and build smart next-gen AI models.</p>
-                <button class="view-btn">View Full Details →</button>
+                <p>Explore Artificial Intelligence, Machine Learning, Python, and smart AI models.</p>
+                <button class="outline-btn">View Full Details →</button>
             </div>
 
-            <!-- 3. Music Club Card -->
-            <div class="club-card" onclick="openClubModal('music')">
-                <div class="club-badge">MELODY &amp; JAMMING</div>
-                <div class="icon-circle">🎸</div>
+            <!-- 3. Music Club -->
+            <div class="card" onclick="showClub('music')">
+                <span class="badge">MELODY & BAND</span>
+                <div class="icon">🎸</div>
                 <h3>Music Club</h3>
-                <p>Unleash your musical talent in vocals, guitar, keyboard, drums, band performances, and acoustic nights.</p>
-                <button class="view-btn">View Full Details →</button>
+                <p>Showcase your talent in vocals, guitar, keyboard, drums, and acoustic jamming nights.</p>
+                <button class="outline-btn">View Full Details →</button>
             </div>
 
-            <!-- 4. Drama Club Card -->
-            <div class="club-card" onclick="openClubModal('drama')">
-                <div class="club-badge">THEATER &amp; ACTING</div>
-                <div class="icon-circle">🎭</div>
+            <!-- 4. Drama Club -->
+            <div class="card" onclick="showClub('drama')">
+                <span class="badge">THEATER & ACTING</span>
+                <div class="icon">🎭</div>
                 <h3>Drama Club</h3>
-                <p>Express stories through stage plays, street plays, scriptwriting, mime, and expressive acting workshops.</p>
-                <button class="view-btn">View Full Details →</button>
+                <p>Perform in stage plays, street plays, scriptwriting, and expressive acting workshops.</p>
+                <button class="outline-btn">View Full Details →</button>
             </div>
 
-            <!-- 5. Sports Club Card -->
-            <div class="club-card" onclick="openClubModal('sports')">
-                <div class="club-badge">FITNESS &amp; GAMES</div>
-                <div class="icon-circle">⚽</div>
+            <!-- 5. Sports Club -->
+            <div class="card" onclick="showClub('sports')">
+                <span class="badge">FITNESS & GAMES</span>
+                <div class="icon">⚽</div>
                 <h3>Sports Club</h3>
-                <p>Train for inter-college tournaments in cricket, football, basketball, badminton, athletics, and chess.</p>
-                <button class="view-btn">View Full Details →</button>
+                <p>Compete in cricket, football, basketball, badminton, athletics, and chess tournaments.</p>
+                <button class="outline-btn">View Full Details →</button>
             </div>
 
-            <!-- 6. Debate Club Card -->
-            <div class="club-card" onclick="openClubModal('debate')">
-                <div class="club-badge">PUBLIC SPEAKING &amp; MUN</div>
-                <div class="icon-circle">🎙️</div>
+            <!-- 6. Debate Club -->
+            <div class="card" onclick="showClub('debate')">
+                <span class="badge">PUBLIC SPEAKING</span>
+                <div class="icon">🎙️</div>
                 <h3>Debate Club</h3>
-                <p>Sharpen your critical thinking, public speaking, parliamentary debates, group discussions, and MUN skills.</p>
-                <button class="view-btn">View Full Details →</button>
+                <p>Sharpen critical thinking, public speaking, parliamentary debates, and MUN skills.</p>
+                <button class="outline-btn">View Full Details →</button>
             </div>
 
-            <!-- 7. Art & Craft Club Card -->
-            <div class="club-card" onclick="openClubModal('art')">
-                <div class="club-badge">CREATIVITY &amp; DESIGN</div>
-                <div class="icon-circle">🎨</div>
-                <h3>Art &amp; Craft Club</h3>
-                <p>Explore sketching, canvas painting, origami, DIY crafts, campus wall murals, and creative exhibitions.</p>
-                <button class="view-btn">View Full Details →</button>
-            </div>
-        </div>
-
-        <!-- Popup Modal for Displaying Full Club Descriptions -->
-        <div id="club-modal" class="modal">
-            <div class="modal-content">
-                <span class="close-btn" onclick="closeClubModal()">&times;</span>
-                <span id="modal-tag" class="club-badge">CLUB DETAILS</span>
-                <h2 id="modal-title">Club Title</h2>
-                <p id="modal-desc"></p>
-                <div class="modal-highlights" id="modal-highlights"></div>
-                <a href="Contact.html" class="btn" style="margin-top: 15px;">Contact Coordinator →</a>
+            <!-- 7. Art & Craft Club -->
+            <div class="card" onclick="showClub('art')">
+                <span class="badge">CREATIVITY & ART</span>
+                <div class="icon">🎨</div>
+                <h3>Art & Craft Club</h3>
+                <p>Learn sketching, canvas painting, origami, DIY crafts, and campus exhibitions.</p>
+                <button class="outline-btn">View Full Details →</button>
             </div>
         </div>
-    </main>
 
+        <!-- Simple Popup Box (Modal) for Club Details -->
+        <div id="popup-box" class="modal">
+            <div class="modal-box">
+                <span class="close-btn" onclick="closePopup()">×</span>
+                <h2 id="club-title">Club Name</h2>
+                <p id="club-description">Club description goes here.</p>
+                <p id="club-activities" class="activity-box"></p>
+                <a href="Contact.html" class="btn">Contact Coordinator →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Linking external JavaScript file -->
     <script src="app.js"></script>
 </body>
 </html>
