@@ -199,7 +199,7 @@ nav a:hover, nav a.active {
 /* CSS Grid: Automatically wraps cards into responsive columns with a minimum width of 360px */
 .grid-box {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(360px, 100%), 1fr);
     gap: 35px;
     text-align: left;
 }
@@ -544,4 +544,92 @@ footer {
     padding-top: 20px;
     color: #94a3b8;
     font-size: 17px;
+}
+
+/* ===== MOBILE RESPONSIVE ===== */
+@media (max-width: 768px) {
+
+    body { font-size: 16px; }
+
+    /* Header */
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 12px 16px;
+        gap: 10px;
+    }
+    .logo-box { gap: 12px; width: 100%; }
+    .logo { height: 52px; padding: 4px 8px; }
+    .college-name { font-size: 11px; letter-spacing: 1.5px; }
+    .hub-title { font-size: 20px; line-height: 1.2; }
+
+    nav {
+        flex-wrap: wrap;
+        gap: 6px 20px;
+        width: 100%;
+    }
+    nav a { font-size: 16px; padding-bottom: 4px; }
+    nav a:hover, nav a.active { border-bottom-width: 3px; }
+
+    /* Announcement bar */
+    .announcement-bar { font-size: 14px; padding: 8px 0; }
+
+    /* Hero */
+    .hero-section { padding: 16px 4% 8px; }
+    .hero-banner {
+        min-height: 440px;
+        padding: 32px 22px;
+        border-radius: 16px;
+        background-image: linear-gradient(to bottom, rgba(4,10,22,0.80), rgba(4,10,22,0.60)), url('group.jpeg');
+        background-position: center;
+    }
+    .small-title { font-size: 12px; letter-spacing: 2px; }
+    .hero-text h1 {
+        font-size: clamp(2rem, 10vw, 2.8rem);
+        line-height: 1.15;
+    }
+    .hero-desc { font-size: 16px; margin-bottom: 24px; }
+    .btn { font-size: 16px; padding: 12px 28px; }
+
+    /* Sections */
+    .container { padding: 40px 5%; }
+    .section-heading { font-size: 28px; }
+    .section-sub { font-size: 16px; margin-bottom: 32px; }
+
+    /* Cards */
+    .grid-box { gap: 20px; }
+    .card { padding: 24px; }
+    .card h3 { font-size: 22px; }
+    .card p { font-size: 16px; }
+    .card-meta { font-size: 15px !important; }
+    .icon { font-size: 34px; }
+    .badge { font-size: 12px; padding: 6px 12px; }
+    .outline-btn { font-size: 16px; padding: 10px 20px; }
+
+    /* Info, form, modal, FAQ */
+    .info-box, .registration-form, .modal-box { padding: 24px; }
+    .info-box h3 { font-size: 22px; }
+    .form-group label { font-size: 16px; }
+    .form-group input, .form-group select, .form-group textarea { font-size: 16px; padding: 12px 14px; }
+    .faq-item { padding: 16px 18px; }
+    .faq-item summary { font-size: 18px; }
+    .faq-item p { font-size: 16px; }
+    .modal-box h2 { font-size: 26px; }
+    .modal-box p, .activity-box { font-size: 16px; }
+    .close-btn { top: 12px; right: 16px; font-size: 32px; }
+
+    /* Coding banner */
+    .coding-banner { padding: 24px; gap: 24px; }
+    .coding-left { flex: 1 1 100%; }
+    .coding-left h1 { font-size: 34px; }
+    .coding-left p { font-size: 16px; }
+    .code-box { flex: 1 1 100%; padding: 18px; font-size: 14px; }
+
+    /* Footer */
+    footer { padding: 32px 5% 20px; }
+    .footer-content { flex-direction: column; align-items: flex-start; }
+    .footer-content h3 { font-size: 20px; }
+    .footer-content p { font-size: 15px; }
+    .footer-pill { font-size: 14px; padding: 8px 14px; }
+    .copyright { font-size: 14px; }
 }
