@@ -199,7 +199,7 @@ nav a:hover, nav a.active {
 /* CSS Grid: Automatically wraps cards into responsive columns with a minimum width of 360px */
 .grid-box {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
     gap: 35px;
     text-align: left;
 }
@@ -544,79 +544,4 @@ footer {
     padding-top: 20px;
     color: #94a3b8;
     font-size: 17px;
-}
-
-/* =========================================================
-   MOBILE RESPONSIVE FIXES (Sirf choti screens ke liye)
-   Isko file ke sabse end mein hi rakhna hai
-   ========================================================= */
-@media (max-width: 768px) {
-    /* 1. Header & Logo Alignment Fix */
-    header {
-        flex-direction: column;
-        gap: 15px;
-        padding: 15px 5%;
-    }
-    .logo-box {
-        flex-direction: column; /* Logo aur text ko upar-niche set karega */
-        text-align: center;
-        gap: 8px;
-    }
-    .logo {
-        height: 60px; /* Logo ko thoda chota kiya taaki fit ho sake */
-        padding: 4px 8px;
-    }
-    .college-name {
-        font-size: 14px;
-    }
-    .hub-title {
-        font-size: 26px; /* Text ko chota kiya taaki ek line mein aaye */
-    }
-
-    /* 2. Navigation Links Fit Fix */
-    nav {
-        gap: 15px;
-        flex-wrap: wrap; 
-        justify-content: center;
-    }
-    nav a {
-        font-size: 18px;
-    }
-
-    /* 3. Hero Banner Text Overflow Fix (Screenshot wali main problem) */
-    .hero-banner {
-        padding: 40px 20px;
-        min-height: auto; 
-        text-align: center;
-        background-position: center;
-    }
-    .small-title {
-        font-size: 14px;
-    }
-    .hero-text h1 {
-        font-size: 38px; /* 64px se 38px kiya taaki "COLLEGE" bahar na nikle */
-        line-height: 1.2;
-    }
-    .hero-desc {
-        font-size: 18px;
-        margin-bottom: 25px;
-    }
-
-    /* 4. Cards Grid Fix for Mobile */
-    .grid-box {
-        grid-template-columns: 1fr; /* Mobile par strictly 1 column banayega */
-    }
-    .card {
-        padding: 25px;
-    }
-
-    /* 5. Footer Alignment Fix */
-    .footer-content {
-        flex-direction: column;
-        text-align: center;
-        gap: 15px;
-    }
-    .footer-highlights {
-        justify-content: center;
-    }
 }
