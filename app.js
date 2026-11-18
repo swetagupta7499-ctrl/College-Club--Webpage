@@ -10,7 +10,7 @@ function showClub(clubName) {
     var title = document.getElementById("club-title");
     var desc = document.getElementById("club-description");
     var schedule = document.getElementById("club-schedule");
-    var activities = document.getElementById("club-activities");
+    var activities = document.getElementById("club-activities");  
     var popup = document.getElementById("popup-box");
  
     // Checking which club parameter was passed and updating innerText accordingly
