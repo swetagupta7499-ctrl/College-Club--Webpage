@@ -12,7 +12,7 @@ function showClub(clubName) {
     var schedule = document.getElementById("club-schedule");
     var activities = document.getElementById("club-activities");
     var popup = document.getElementById("popup-box");
-
+ 
     // Checking which club parameter was passed and updating innerText accordingly
     if (clubName === "music") {
         tag.innerText = "VOCALS, INSTRUMENTS & LIVE BAND";
