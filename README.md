@@ -132,7 +132,7 @@ College-Club-Hub/
 ---
 
 ## 🙏 Acknowledgement
-We sincerely thank our faculty, **Muskan Katiyar**, for her guidance, support, and valuable feedback throughout the development of this project.
+We sincerely thank our faculty **Muskan Katiyar** for her guidance, support, and valuable feedback throughout the development of this project.
 
 ---
 © 2026 College Club Hub | Sitare University | Designed by Sweta & Team
