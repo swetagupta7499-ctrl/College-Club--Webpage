@@ -46,12 +46,12 @@
 ---
 
 ## 🎭 Clubs Covered
-* 💻 **Coding Club:** Full-stack web development, DSA and competitive coding, Git & GitHub, hackathon squads.
-* 🎸 **Music Club:** Acoustic jamming, auditions, and live band performances.
-* 🎭 **Drama Club:** Street plays (Nukkad Natak) and stage performances.
-* 🏏 **Sports Club:** Inter-batch and inter-university sports tournaments with .
-* 🎙️ **Debate Club:** Parliamentary debates, MUN, and Youth Parliament.
-* 🎨 **Art & Craft Club:** Painting, handmade crafts, and art exhibitions.
+* 💻 **Coding Club:** Full-stack web development, DSA and competitive coding, Git & GitHub, hackathons, and open-source project mentorship.
+* 🎸 **Music Club:** Acoustic jamming, auditions, live band performances, and vocal and instrumental training sessions.
+* 🎭 **Drama Club:** Street plays (Nukkad Natak), stage performances, and scriptwriting and acting workshops.
+* 🏃 **Sports Club:** Inter-batch and inter-university sports tournaments, fitness conditioning camps, and regular team practice sessions.
+* 🎙️ **Debate Club:** Parliamentary debates, MUN, Youth Parliament, and public speaking and extempore sessions.
+* 🎨 **Art & Craft Club:** Painting, handmade crafts, art exhibitions, and DIY decor and campus mural workshops.
 
 ---
 
