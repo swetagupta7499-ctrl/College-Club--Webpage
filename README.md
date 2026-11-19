@@ -34,7 +34,7 @@
 ## ✨ Key Features
 * **Announcement Ticker:** A scrolling `<marquee>` bar on the home page that shares the latest campus updates and registrations.
 * **Hero Banner:** A full-width group photo with a welcome message and a "Join Clubs" call-to-action button.
-* **Why Join Us Cards:** Four clickable cards (Meet New People, Learn & Grow, Share Ideas, Join Campus Events) that take the user to the Clubs page.
+* **Why Join Us Cards:** Four clickable cards (Meet New People, Learn & Grow, Share Your Ideas, Join Campus Events) that take the user to the Clubs page.
 * **Upcoming Events Calendar:** Event cards with date, venue, timing, and a direct "Register Now" link.
 * **Clubs Directory:** Responsive grid of club cards. Clicking a card opens a detailed popup modal.
 * **Dedicated Coding Club Page:** Includes a decorative code terminal window, club statistics, technical learning tracks, and a roadmap of weekly and monthly sessions.
