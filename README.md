@@ -132,7 +132,8 @@ College-Club-Hub/
 ---
 
 ## 🙏 Acknowledgement
-We sincerely thank our faculty **Muskan Katiyar** for her guidance, support, and valuable feedback throughout the development of this project.
+
+We extend our sincere gratitude to our faculty mentor, **Muskan Katiyar**, at **Sitare University**, for her continuous guidance, constructive feedback, and encouragement throughout the development of **College Club Hub**. We also thank our teammates and peers for their collaboration and support in bringing this project together.
 
 ---
 © 2026 College Club Hub | Sitare University | Designed by Sweta & Team
