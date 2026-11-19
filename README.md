@@ -14,7 +14,7 @@
 ## 📌 Project Overview
 * **Project Name:** College Club Hub
 * **Institution:** Sitare University (Shri Ramswaroop Memorial University Campus, Lucknow)
-* **Developed By:** Sweta & Team
+* **Developed By:** Sweta, Viswamitra, Sumit
 * **Faculty:** Muskan Katiyar
 * **Difficulty Level:** Beginner (Semester 1 — Consistent Level)
 * **Project Type:** Static multi-page website (HTML, CSS, JavaScript)
