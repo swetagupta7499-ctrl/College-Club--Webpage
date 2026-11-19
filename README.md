@@ -27,6 +27,7 @@
 * Describes the core mission, team members, office-bearers, and upcoming campus events of each club.
 * Lets students explore clubs, read detailed club information in popups, check upcoming events, and register through a form.
 * Serves as an interactive hub for student engagement and community building.
+* Solves the challenge of scattered campus information by giving students one easy-to-use platform to discover active clubs, schedules, and how to join.
 
 ---
 
@@ -48,7 +49,7 @@
 * 💻 **Coding Club:** Full-stack web development, DSA and competitive coding, Git & GitHub, hackathon squads.
 * 🎸 **Music Club:** Acoustic jamming, auditions, and live band performances.
 * 🎭 **Drama Club:** Street plays (Nukkad Natak) and stage performances.
-* 🏏 **Sports Club:** Inter-batch and inter-university sports tournaments.
+* 🏏 **Sports Club:** Inter-batch and inter-university sports tournaments with .
 * 🎙️ **Debate Club:** Parliamentary debates, MUN, and Youth Parliament.
 * 🎨 **Art & Craft Club:** Painting, handmade crafts, and art exhibitions.
 
